@@ -1,6 +1,5 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from time import sleep
-from os import getenv
 
 class SimpleServer(BaseHTTPRequestHandler):
     def do_GET(self):
