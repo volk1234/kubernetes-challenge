@@ -7,7 +7,7 @@ class SimpleServer(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-Type', 'text/plain')
         self.end_headers()
-        message = getenv('MESSAGE')
+        message = 'Kubernetes challenge'
         self.wfile.write(bytes(message, 'utf-8'))
 
 hostname = "0.0.0.0"
