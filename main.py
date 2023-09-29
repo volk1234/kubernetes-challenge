@@ -1,5 +1,4 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
-from time import sleep
 
 class SimpleServer(BaseHTTPRequestHandler):
     def do_GET(self):
