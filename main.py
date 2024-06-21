@@ -3,7 +3,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 class SimpleServer(BaseHTTPRequestHandler): 
    """HTTP request handler with GET method.""" 
  
-   def do_GET(self): # pylint: disable=C0103 
+   def do_GET(self):
        """Handle GET request.""" 
        self.send_response(200) 
        self.send_header('Content-Type', 'text/plain') 
